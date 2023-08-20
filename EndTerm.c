@@ -238,11 +238,11 @@ void horner(double poly[], int size, int longresult)
     FinalResult = fopen("result.txt", "a");
     double result = poly[size - 1]; // Initialize result
     double value;
-    printf("Nhap gia tri can kiem tra: ");
+    printf("Nhap gia tri can phai kiem tra: ");
     scanf("%lf", &value);
     // Evaluate value of polynomial using Horner's method
 
-    printf("\n_______Kiem tra bang thuat toan Horner_______");
+    printf("\n_______Kiem tra bang thuat toan Horner______");
     printf("\nx0 = %.3f", value);
     printf("\nKhoi tao gia tri ban dau bang he so cua x^%d:", size - 1);
     result = poly[size - 1];
@@ -352,3 +352,5 @@ void hienThiSoTP(double num, int n)
     }
     fclose(FinalResult);
 }
+
+
